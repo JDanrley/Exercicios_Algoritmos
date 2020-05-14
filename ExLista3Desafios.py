@@ -10,7 +10,7 @@ while x <= n:
     flag = True
     a, b, c = x, (x + 1), (x + 2)
   x += 1
-if flag == True:
+if flag:
   print (f'O número é triangular, pois {a}x{b}x{c} = {n}')
 else:
   print ('O número não é triangular')
@@ -29,33 +29,33 @@ if preço != pag:
   n5 = (troco - (n50*50 + n20*20 + n10*10)) // 5
   n2 = (troco - (n50*50 + n20*20 + n10*10 + n5*5)) // 2
   n1 = troco - (n50*50 + n20*20 + n10*10 + n5*5 + n2*2)
-  print (f'O troco de R${troco},00 será composto com as seguintes notas: \n\n{n1} Notas de 1 real.\n{n2} Notas de 2 Reais.\n{n5} Notas de 5 Reais.\n{n10} Notas de 10 Reais.\n{n20} Notas de 20 Reais.\n{n50} Notas de 50 Reais')
+  print(f'O troco de R${troco},00 será composto com as seguintes notas: \n\n{n1} Notas de 1 real.\n{n2} Notas de 2 Reais.\n{n5} Notas de 5 Reais.\n{n10} Notas de 10 Reais.\n{n20} Notas de 20 Reais.\n{n50} Notas de 50 Reais')
 else:
-  print ("Não será necessário nenhum troco!")
+  print("Não será necessário nenhum troco!")
 
 #Exercício 3:
 
-print ('\nEx 3: Análise para verificar se o número inserido é ou não primo.')
+print('\nEx 3: Análise para verificar se o número inserido é ou não primo.')
 
 n = int(input('Insira um número inteiro e positivo a ser analisado: '))
 i = n - 1
 if n == 1 or n == 0:
-  print ('O valor não é válido, digite um número maior que 1')
+  print('O valor não é válido, digite um número maior que 1')
   i = 0
-primo = True
+primo = 1
 while i >= 2:
   flag = n % i
   i -=1
   if flag == 0:
     primo = False
-if primo == False and i != 0:
-  print ('O número não é primo')
+if not primo and i != 0:
+  print('O número não é primo')
 elif i != 0:
-  print ('O número é primo')
+  print('O número é primo')
 
 #Exercício 4:
 
-print ('\nEx 4: Decomposição em fatores primos e cálculo de multiplicidade.\n')
+print('\nEx 4: Decomposição em fatores primos e cálculo de multiplicidade.\n')
 
 n = int(input('Insira um número inteiro e positivo a ser decomposto: '))
 nf = n
@@ -85,8 +85,7 @@ else:
 
 print ('\nEx 5: Inverter as algarismos de um número.\n')
 
-n = int(input('Insira o número a ser invertido: '))
-n = str(n)
+n = input('Insira o número a ser invertido: ')
 x = len(n)
 final = ''
 while x > 0:
