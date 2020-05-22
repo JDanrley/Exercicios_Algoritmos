@@ -1,5 +1,7 @@
 # Exercicios_Algoritmos
-First Python codes created at algorithms class 
+Primeiros algoritmos em Python.
 
-Os exercícios são desafios com argumentos de entrada e retornos esperados em diversas funções em Python.
+Os exercícios são se baseiam em listas passadas pelo dicente da disciplina, com diversos desafios.
+
+A partir da sexta lista, a tarefa se baseia em definir funções que devem retornar os valores exemplificados nos comentários presentes no arquivo fonte.
 Apenas para salvar o trabalho e realizado e oferecer uma alternativa para futuros estudantes da disciplina.
