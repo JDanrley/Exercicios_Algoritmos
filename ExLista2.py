@@ -3,18 +3,19 @@
 
 print ('Definir o tipo do triângulo - Ex 1 da segunda lista.')
 
-l1 = int(input('Insira o tamanho do primeiro lado: '))
-l2 = int(input('Insira o tamanho do segundo lado: '))
-l3 = int(input('Insira o tamanho do terceiro lado: '))
-
-if l1 > l2 + l3 or l2 > l1 + l3 or l3 > l2 + l1 or l1 < l2 - l3 or l2 < l1 - l3 or l3 < l2 - l1 or l1 < l3 - l2 or l2 < l3 - l1 or l3 < l1 - l2: #Condições de relação para a existência de um triângulo.
-    print ('Os valores inseridos não atendem à condição de existência de um triângulo')
-elif l1 != l2 and l1 != l3 and l2 != l3:
-    print ('Os valores inseridos são de um triângulo escaleno')
-elif l1 == l2 and l1 == l3:
-    print ('O valores inseridos são de um triângulo equilátero')
+a = float(input('Primeiro lado: '))
+b = float(input('Segundo  lado: '))
+c = float(input('Terceiro lado: '))
+    
+if (a + b < c) or (a + c < b) or (b + c < a): #Validação dos lados, definindo se é triângulo ou não
+    print('Nao é um triangulo')
+elif (a == b) and (a == c) :
+    print('Equilatero')
+elif (a==b) or (a==c) or (b==c):
+    print('Isósceles')
 else:
-    print ('Os valores inseridos são de um triângulo isósceles')
+    print('Escaleno')
+
 
 #Exercício 2:
     
